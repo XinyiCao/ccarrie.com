@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrie Cao — Product Leader</title>
+  <meta name="description"
+    content="Product Leader at the intersection of engineering systems and social psychology. Formerly YouTube & AWS. Currently building what's next.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="/" class="nav-brand">
+        <div class="nav-logo">C.</div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">Carrie Cao</span>
+          <span class="nav-brand-title">Product Manager</span>
+        </div>
+      </a>
+      <div class="nav-desktop">
+        <div class="nav-links">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#work" class="nav-link">Selected Work</a>
+          <a href="#strategy" class="nav-link">Strategic Memos</a>
+          <a href="#creative" class="nav-link">Creative Lab</a>
+          <a href="#philosophy" class="nav-link">Philosophy</a>
+        </div>
+        <button class="nav-cta" data-open-contact>Contact</button>
+      </div>
+      <button class="nav-mobile-btn" data-open-mobile-menu aria-label="Open menu">
+        <i data-lucide="menu" style="width:24px;height:24px;"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-panel">
+      <button class="mobile-menu-close" data-close-mobile-menu aria-label="Close menu">
+        <i data-lucide="x" style="width:24px;height:24px;"></i>
+      </button>
+      <div class="mobile-menu-links">
+        <a href="#about" class="mobile-menu-link">About</a>
+        <a href="#work" class="mobile-menu-link">Selected Work</a>
+        <a href="#strategy" class="mobile-menu-link">Strategic Memos</a>
+        <a href="#creative" class="mobile-menu-link">Creative Lab</a>
+        <a href="#philosophy" class="mobile-menu-link">Philosophy</a>
+        <a href="#" class="mobile-menu-link" data-open-contact>Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div class="modal-overlay" id="contact-modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <div class="modal-inner">
+        <div class="modal-header">
+          <div>
+            <h3>Get in Touch</h3>
+            <p>Let's discuss immersive platforms or open water swimming.</p>
+          </div>
+          <button class="modal-close" data-close-contact aria-label="Close modal">
+            <i data-lucide="x" style="width:20px;height:20px;"></i>
+          </button>
+        </div>
+        <form id="contact-form">
+          <div class="form-group">
+            <label class="form-label" for="name">Your Name</label>
+            <input type="text" id="name" class="form-input" placeholder="Jane Doe">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <input type="email" id="email" class="form-input" placeholder="jane@company.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea id="message" class="form-textarea" placeholder="Tell me about your project..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================== -->
+  <!-- SCROLL-CARD SECTIONS     -->
+  <!-- ======================== -->
+  <main class="scroll-main">
+
+    <!-- Card 1: About Me -->
+    <section class="scroll-section" id="about">
+      <div class="card-panel">
+        <div class="card-panel-inner card-about-layout">
+          <div class="card-about-left">
+            <div class="hero-badge">
+              <span class="hero-badge-dot"></span>
+              <span class="hero-badge-text">Available for strategic partnerships</span>
+            </div>
+            <h1 class="hero-title">
+              Hi, I'm <br>
+              <span class="hero-title-accent">Carrie.</span>
+            </h1>
+            <p class="hero-subtitle">
+              Architecting <span class="text-highlight">The Human Algorithm</span> — at the intersection of
+              <span class="text-highlight">engineering systems</span> and <span class="text-highlight">social
+                psychology</span>.
+            </p>
+            <div class="hero-meta">
+              <div class="hero-meta-location">
+                <i data-lucide="globe" style="width:16px;height:16px;color:var(--indigo-500);"></i>
+                San Francisco Bay Area
+              </div>
+              <div class="hero-meta-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+                <a href="#">Read CV</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-about-right">
+            <div class="card-about-tags">
+              <div class="floating-tag tag-top">
+                <i data-lucide="cpu" style="width:14px;height:14px;"></i>
+                <div>
+                  <div class="floating-tag-title">Product Leader</div>
+                  <div class="floating-tag-desc">Formerly YouTube & AWS</div>
+                </div>
+              </div>
+              <div class="floating-tag tag-bottom">
+                <i data-lucide="heart" style="width:14px;height:14px;"></i>
+                <div>
+                  <div class="floating-tag-title">Human Centric</div>
+                  <div class="floating-tag-desc">Bridging engineering & empathy</div>
+                </div>
+              </div>
+            </div>
+            <div class="card-about-portrait">
+              <img src="assets/me.webp" alt="Carrie Cao" class="portrait-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card 2: Selected Work -->
+    <section class="scroll-section" id="work">
+      <div class="card-panel">
+        <div class="card-panel-inner">
+          <div class="section-header">
+            <div class="section-header-top">
+              <h2 class="section-header-title">Selected Work</h2>
+              <div class="section-header-line"></div>
+            </div>
+            <p class="section-header-subtitle">Scaling platforms for billions of interactions across identity and
+              engagement.</p>
+          </div>
+
+          <div class="work-duo-grid">
+            <!-- The Zero-Friction Entryway -->
+            <div class="work-card card-identity">
+              <div class="card-identity-content">
+                <div>
+                  <span class="badge badge-primary">YouTube / Identity Systems</span>
+                  <h3>The Zero-Friction Entryway</h3>
+                  <p>Modernized legacy sign-in architectures to reduce bounce rates by 22%. Scaled intelligent device
+                    pairing for living room environments.</p>
+                </div>
+                <div>
+                  <div class="data-bar">
+                    <div class="data-bar-header">
+                      <span class="label">Success Rate Increase</span>
+                      <span class="value">+33.4%</span>
+                    </div>
+                    <div class="data-bar-track">
+                      <div class="data-bar-fill emerald" style="width:33.4%"></div>
+                    </div>
+                  </div>
+                  <div class="data-bar">
+                    <div class="data-bar-header">
+                      <span class="label">TTR (Time To Resonance)</span>
+                      <span class="value">-1.2s</span>
+                    </div>
+                    <div class="data-bar-track">
+                      <div class="data-bar-fill indigo" style="width:80%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-identity-visual">
+                <div class="card-visual-device">
+                  <div class="card-visual-dots">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <i data-lucide="shield" class="card-visual-icon" style="width:64px;height:64px;stroke-width:1;"></i>
+                  <div class="card-visual-play">
+                    <div class="card-visual-play-btn">
+                      <i data-lucide="play" style="width:20px;height:20px;color:white;fill:white;margin-left:2px;"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-visual-glow"></div>
+              </div>
+            </div>
+
+            <!-- EZConnect -->
+            <div class="work-card card-ezconnect-compact">
+              <div class="card-ezconnect-visual">
+                <img src="assets/ez_connect.gif" alt="EZConnect demo" class="ezconnect-gif">
+              </div>
+              <div class="card-ezconnect-body">
+                <div>
+                  <span class="badge badge-default">Connected Ecosystems</span>
+                  <h3>EZConnect Framework</h3>
+                  <p>Unifying mobile interaction with 10-foot TV experiences to solve input fragmentation.</p>
+                </div>
+                <div class="card-stats">
+                  <div class="card-stat">
+                    <div class="card-stat-label">Retention</div>
+                    <div class="card-stat-value indigo">+18%</div>
+                  </div>
+                  <div class="card-stat">
+                    <div class="card-stat-label">Activity</div>
+                    <div class="card-stat-value dark">2.4x</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card 3: Strategic Memos -->
+    <section class="scroll-section" id="strategy">
+      <div class="card-panel">
+        <div class="card-panel-inner">
+          <div class="section-header">
+            <div class="section-header-top">
+              <h2 class="section-header-title">Strategic Memos</h2>
+              <div class="section-header-line"></div>
+            </div>
+            <p class="section-header-subtitle">Thought leadership on the future of social, video, and the creator
+              economy.</p>
+          </div>
+
+          <div class="memo-grid">
+            <a href="articles/unbundling-google.html" class="memo-card">
+              <div class="memo-card-meta">
+                <span class="badge badge-primary">Analysis</span>
+                <span class="memo-card-date">2024</span>
+              </div>
+              <h4>Entropy's Carnival: The Battle for Attention in the AI Era</h4>
+              <p>A product manager's perspective on the essence of entertainment, zero-sum games, and future forms in
+                the age of generative AI.</p>
+              <div class="memo-card-cta">
+                Read Full Analysis <i data-lucide="chevron-right" style="width:12px;height:12px;"></i>
+              </div>
+            </a>
+
+            <a href="articles/ad-tier-friction.html" class="memo-card">
+              <div class="memo-card-meta">
+                <span class="badge badge-primary">Product Design</span>
+                <span class="memo-card-date">2025</span>
+              </div>
+              <h4>The Trap of 'Perfect Code': Why the Best Tech Doesn't Always Win</h4>
+              <p>Technology is the skeleton of a product, but empathy for the human experience is its soul. Lessons from
+                Jobs and Musk.</p>
+              <div class="memo-card-cta">
+                Read Full Analysis <i data-lucide="chevron-right" style="width:12px;height:12px;"></i>
+              </div>
+            </a>
+
+            <a href="articles/community-vs-content-moats.html" class="memo-card">
+              <div class="memo-card-meta">
+                <span class="badge badge-primary">Platform</span>
+                <span class="memo-card-date">Feb 2026</span>
+              </div>
+              <h4>The Monetization Matrix: From Attention Economy to Value Extraction Per Minute</h4>
+              <p>A strategic analysis of content platform monetization in the AI era, drawing on models from Netflix,
+                Roblox, and TikTok.</p>
+              <div class="memo-card-cta">
+                Read Full Analysis <i data-lucide="chevron-right" style="width:12px;height:12px;"></i>
+              </div>
+            </a>
+
+            <a href="articles/short-form-saturation.html" class="memo-card">
+              <div class="memo-card-meta">
+                <span class="badge badge-primary">Growth</span>
+                <span class="memo-card-date">Feb 2026</span>
+              </div>
+              <h4>Dopamine Alone Is Not Enough: Defending the Moat of Long-Form Video</h4>
+              <p>In the era of the "3-second attention span," how can Netflix and Disney+ defend their final moats
+                against TikTok?</p>
+              <div class="memo-card-cta">
+                Read Full Analysis <i data-lucide="chevron-right" style="width:12px;height:12px;"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card 4: Creative Lab -->
+    <section class="scroll-section" id="creative">
+      <div class="card-panel">
+        <div class="card-panel-inner">
+          <div class="section-header">
+            <div class="section-header-top">
+              <h2 class="section-header-title">Creative Lab</h2>
+              <div class="section-header-line"></div>
+            </div>
+            <p class="section-header-subtitle">Where product instinct meets creator empathy and safety engineering.</p>
+          </div>
+
+          <div class="creative-duo-grid">
+            <!-- Content Creator (Platform Power User) -->
+            <div class="work-card card-creator">
+              <div class="card-creator-header">
+                <div>
+                  <span class="badge badge-default">Creator Empathy</span>
+                  <h3>Platform Power User</h3>
+                </div>
+                <div class="card-creator-icon">
+                  <i data-lucide="users" style="width:20px;height:20px;"></i>
+                </div>
+              </div>
+              <div class="card-creator-grid">
+                <div class="card-creator-text">
+                  <p>Managing a personal brand with <span class="text-highlight">100k+ reach</span> is more than a
+                    hobby; it's a living laboratory for product insights.</p>
+                  <p>I stress-test retention tools, thumbnail A/B patterns, and community features on my own audience
+                    before proposing system-wide changes.</p>
+                </div>
+                <div class="card-creator-chart">
+                  <div class="card-creator-chart-label">
+                    Audience Growth
+                    <div class="chart-platform-icons">
+                      <i class="fa-brands fa-youtube"></i>
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                  </div>
+                  <div class="growth-chart-container">
+                    <canvas id="growthChart"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Algorithmic Safety Gates -->
+            <div class="work-card work-card-dark card-safety">
+              <div style="position:relative;z-index:10;">
+                <span class="badge badge-primary">Internal Tooling</span>
+                <h3>Algorithmic Safety Gates</h3>
+                <p>Engineered LLM-powered moderation pipelines for internal creator communities. Balancing automated
+                  triage with human oversight.</p>
+              </div>
+              <div style="position:relative;z-index:10;">
+                <div class="card-safety-status">
+                  <i data-lucide="activity" style="width:12px;height:12px;"></i>
+                  System Health: Optimal
+                </div>
+                <div class="card-safety-metrics">
+                  <div class="card-safety-metric">
+                    <div class="label">Human Effort</div>
+                    <div class="value">-60%</div>
+                  </div>
+                  <div class="card-safety-metric">
+                    <div class="label">Triage Latency</div>
+                    <div class="value">0.4s</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-safety-glow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card 5: Philosophy + Off Screen -->
+    <section class="scroll-section" id="philosophy">
+      <div class="card-panel">
+        <div class="card-panel-inner">
+          <div class="about-grid">
+            <div>
+              <h3 class="about-label">Philosophy</h3>
+              <p class="about-quote">
+                "Building for <span class="accent">Scale</span> without losing the <span class="italic">Soul</span>."
+              </p>
+              <div class="about-text">
+                <p>My background as an Android Engineer means I understand the "how." My tenure in Product means I
+                  understand the "why."</p>
+                <p>I believe the best platforms are those that disappear into the background—enabling human connection
+                  without getting in the way. I optimize for <span class="text-highlight-italic">Joy per
+                    Transaction</span> as much as DAU.</p>
+              </div>
+            </div>
+            <div>
+              <h3 class="about-label">Off Screen</h3>
+              <div class="interest-list">
+                <div class="interest-item interest-item-swim">
+                  <div class="interest-icon">
+                    <i data-lucide="anchor" style="width:20px;height:20px;"></i>
+                  </div>
+                  <div>
+                    <div class="interest-title">Open Water Swimmer</div>
+                    <div class="interest-desc">Crossing the Trans Tahoe Relay. Persistence through cold and chop.</div>
+                  </div>
+                  <img src="assets/swim.webp" alt="Open water swimming" class="interest-hover-img">
+                </div>
+                <div class="interest-item interest-item-hover">
+                  <div class="interest-icon">
+                    <i data-lucide="layers" style="width:20px;height:20px;"></i>
+                  </div>
+                  <div>
+                    <div class="interest-title">Analog Enthusiast</div>
+                    <div class="interest-desc">Bullet journaling and architectural photography. Tangible inputs for
+                      digital systems.</div>
+                  </div>
+                  <img src="assets/analog.webp" alt="Analog photography" class="interest-hover-img">
+                </div>
+                <div class="interest-item interest-item-hover">
+                  <div class="interest-icon">
+                    <i data-lucide="brain" style="width:20px;height:20px;"></i>
+                  </div>
+                  <div>
+                    <div class="interest-title">Life-long Student</div>
+                    <div class="interest-desc">Curating a second brain of psychology, system design, and history.</div>
+                  </div>
+                  <img src="assets/learning.webp" alt="Lifelong learning" class="interest-hover-img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">
+            <div class="footer-logo">C.</div>
+            <h2>Carrie Cao</h2>
+          </div>
+          <p class="footer-desc">Leading the evolution of immersive content platforms through high-scale social systems
+            and creator-first empathy.</p>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-nav-group">
+            <span class="footer-nav-label">Contact</span>
+            <a href="#" class="footer-nav-link">LinkedIn</a>
+            <a href="#" class="footer-nav-link" data-open-contact>Email Me</a>
+          </div>
+          <div class="footer-nav-group">
+            <span class="footer-nav-label">Navigate</span>
+            <a href="#work" class="footer-nav-link">Work</a>
+            <a href="#strategy" class="footer-nav-link">Strategy</a>
+            <a href="#philosophy" class="footer-nav-link">Philosophy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Designed & Engineered by Carrie Cao © 2026</span>
+        <span>Built with HTML + CSS + Lucide</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const canvas = document.getElementById('growthChart');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+
+      const labels = [];
+      const dataPoints = [];
+      let currentFollowers = 0;
+      const startDate = new Date('2023-01-01');
+
+      for (let i = 0; i <= 1095; i++) {
+        let currentDate = new Date(startDate);
+        currentDate.setDate(startDate.getDate() + i);
+        labels.push(currentDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }));
+
+        let dailyGrowth = 0;
+        if (i < 850) {
+          dailyGrowth = Math.random() * 2;
+        } else if (i === 850) {
+          dailyGrowth = 25000;
+        } else if (i < 910) {
+          dailyGrowth = Math.random() * 5;
+        } else {
+          dailyGrowth = Math.random() * 400 + 50;
+          if (Math.random() > 0.9) dailyGrowth += Math.random() * 500;
+        }
+        if (Math.random() < 0.4 && i !== 850) dailyGrowth = 0;
+        currentFollowers += dailyGrowth;
+        dataPoints.push(Math.floor(currentFollowers));
+      }
+
+      const scaleFactor = 106200 / dataPoints[dataPoints.length - 1];
+      for (let i = 0; i < dataPoints.length; i++) {
+        dataPoints[i] = Math.floor(dataPoints[i] * scaleFactor);
+      }
+
+      let gradient = ctx.createLinearGradient(0, 0, 0, 300);
+      gradient.addColorStop(0, 'rgba(99, 102, 241, 0.4)');
+      gradient.addColorStop(1, 'rgba(99, 102, 241, 0.0)');
+
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Total Subscribers',
+            data: dataPoints,
+            borderColor: '#6366f1',
+            borderWidth: 2,
+            backgroundColor: gradient,
+            fill: true,
+            pointRadius: 0,
+            pointHoverRadius: 5,
+            pointBackgroundColor: '#fff',
+            pointBorderColor: '#6366f1',
+            pointBorderWidth: 2,
+            tension: 0,
+            stepped: true
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              backgroundColor: 'rgba(15, 23, 42, 0.9)',
+              titleColor: '#fff',
+              bodyColor: '#e2e8f0',
+              bodyFont: { size: 12, weight: 'bold' },
+              padding: 10,
+              cornerRadius: 8,
+              displayColors: false,
+              callbacks: {
+                label: function (context) {
+                  return 'Subscribers: ' + context.raw.toLocaleString();
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              grid: { display: false },
+              ticks: {
+                maxTicksLimit: 6,
+                color: '#94a3b8',
+                font: { size: 10 },
+                callback: function (value) {
+                  const label = labels[value];
+                  if (label) {
+                    const parts = label.split(' ');
+                    return parts[0] + ' ' + parts[2];
+                  }
+                  return label;
+                }
+              }
+            },
+            y: {
+              grid: { color: '#f1f5f9', borderDash: [4, 4] },
+              ticks: {
+                color: '#94a3b8',
+                font: { size: 10 },
+                callback: function (value) {
+                  return value >= 1000 ? (value / 1000) + 'k' : value;
+                }
+              }
+            }
+          }
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
